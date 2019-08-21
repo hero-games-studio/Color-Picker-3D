@@ -21,14 +21,14 @@ public class BallMovement : MonoBehaviour
             switch (whatToSpawn)
             {
                 case 1:
-                    GameObject go = Instantiate(blueBall, transform.position, Quaternion.identity);
-                    go = Instantiate(blueBall, new Vector3(2.54f, 4.98f, 0), Quaternion.identity);
+                  //  GameObject go = Instantiate(blueBall, transform.position, Quaternion.identity);    şu haliyle gereksiz burası ama ileride tekrar kullanabiliriz diye şimdilik bıraktım
+                    GameObject go = Instantiate(blueBall, new Vector3(-4.2f, 8.3f, 0), Quaternion.identity);
 
                     // go.GetComponent<Rigidbody>().velocity = Vector3.down * speed * Time.deltaTime;   gravity scale ile toplar düşüyor bu yüzden speed'e gerek yok şimdilik.
                     break;
                 case 2:
-                    go = Instantiate(redBall, transform.position, Quaternion.identity);
-                    go = Instantiate(redBall, new Vector3(2.74f, 5, 0), Quaternion.identity);
+                    //  go = Instantiate(redBall, transform.position, Quaternion.identity);       şu haliyle gereksiz burası ama ileride tekrar kullanabiliriz diye şimdilik bıraktım
+                    go = Instantiate(redBall, new Vector3(-4.2f, 8.3f, 0), Quaternion.identity);
                     // go.GetComponent<Rigidbody>().velocity = Vector3.down * speed * Time.deltaTime;   gravity scale ile toplar düşüyor bu yüzden speed'e gerek yok şimdilik.
                     break;
             }
